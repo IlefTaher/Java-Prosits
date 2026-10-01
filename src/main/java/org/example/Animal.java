@@ -1,0 +1,30 @@
+package org.example;
+
+public class Animal {
+    String family;
+    String name;
+    int age;
+    boolean isMammal;
+    // Constructeur paramétré
+    public Animal(String family, String name, int age, boolean isMammal) {
+        this.family = family;
+        this.name = name;
+        this.age = age;
+        this.isMammal = isMammal;
+    }
+
+    /*@Override
+    public String toString() {
+        return "nom de l'animal   " + name+ "  famille "+ family +" age de l'animal " +age + " est il mammifiere ? : "+ isMammal ;
+    }*/
+    // toString()
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "family='" + family + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", isMammal=" + isMammal +
+                '}';
+    }
+}
